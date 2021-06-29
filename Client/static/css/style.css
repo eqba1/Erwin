@@ -1,0 +1,179 @@
+
+body {
+  margin: 0 auto;
+  max-width: 800px;
+  padding: 0 20px;
+}
+
+.brand {
+  color:#F0EBFF;
+  position: relative;
+  margin-bottom: 50px;
+}
+.body::-webkit-scrollbar { width: 0.125rem; }
+.body::-webkit-scrollbar-thumb { background: #CFD8DC; }
+.body::-webkit-scrollbar-thumb:hover { background: #B0BEC5; }
+
+.msg {
+  max-width: 100%;
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  line-height: 1rem;
+  min-height: 2rem;
+  font-size: 0.875rem;
+  border-radius: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.msg.him {
+  float: left;
+  background-color: #643CFF;
+  color: #fff;
+  border-bottom-left-radius: 0.125rem;
+}
+.msg.you {
+  float: right;
+  background-color: #eceff1;
+  color: #607d8b;
+  border-bottom-right-radius: 0.125rem;
+}
+.container {
+  width: 100%;
+}
+
+#log {
+  flex-direction: column-reverse;
+}
+
+.darker {
+  border-color: #ccc;
+  background-color: #aaa;
+}
+
+.container::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.container img {
+  float: left;
+  max-width: 60px;
+  width: 100%;
+  margin-right: 20px;
+  border-radius: 50%;
+}
+
+.container img.right {
+  float: right;
+  margin-left: 20px;
+  margin-right: 0;
+}
+
+.time-right {
+  float: right;
+  color: #000;
+}
+
+.time-left {
+  float: left;
+  color: #000;
+}
+
+.message-right {
+  float: right;
+  color: #000;
+}
+
+.message-left {
+  float: left;
+  color: #000;
+}
+
+.partner {
+  color: #6a6c6d;
+  top: 0;
+  font-size: 0.675rem;
+  margin-top: -1rem;
+}
+.card-body {
+  text-align: right;
+}
+
+.row {
+  margin-left: 5px;
+}
+
+.sticky {
+  position: fixed; /* Here's what sticks it */
+  bottom: 0; /* to the bottom of the window */
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+
+/* how */ 
+.new-chat{
+    position: fixed;
+    display: flex;
+    justify-self: center;
+    bottom: 0px;
+    background: #643CFF;
+    height: 40px;
+    border-top: 1px solid #643CFF;
+}
+.new-chat input{
+    outline: none;
+    padding: 10px;
+    box-sizing: border-box;
+    font-size: 18px;
+    width: 760px;
+    height: 40px;
+    border: none;
+    display: inline-block;
+    color: #F0EBFF;
+    font-weight: 100;
+    background: #643CFF;
+}
+
+.sendBox {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	background: white;
+}
+
+.sendBox input {
+	font-size: 0.875rem;
+	display: block;
+	width: 100%;
+	border: none;
+	padding: 0.75rem 0.75rem;
+	line-height: 1.25rem;
+	border-top: 0.125rem solid #6a6c6d;
+	transition: 0.5s ease-in-out;
+  padding-left: 1rem;
+  align-content: flex-start;
+  direction: rtl;
+}
+
+input:hover,
+input:focus,
+input:active { 
+	outline: none!important; 
+	border-top: 0.125rem solid #643CFF;
+}
+
+.fixedContainer {
+    background-color:#643CFF;
+    font-size: medium;
+    color: #F0EBFF;
+    position: fixed;
+    padding: 10px;
+    left: 50%;
+    top: 0%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    transform: translateX(-50%);
+}
